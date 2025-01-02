@@ -1,0 +1,180 @@
+*Source code in src/courses/union.cpp
+In this lesson, we will learn about **Unions** in C++, a special data type that allows storing different types of data in the same memory location.
+
+{
+#Unions in C++:
+##1. What is a Union?
+##2. Basic Union Syntax
+##3. Memory Allocation in Unions
+##4. Accessing Union Members
+##5. Advantages and Disadvantages of Using Unions
+##6. Use Cases for Unions
+}
+{
+#Let's dive into Unions in C++! 🧐
+}
+{{
+#What is a Union?
+{
+##Definition and Usage
+###A union in C++ is a user-defined data type that allows storing different types of data in the same memory location. The main advantage of using a union is that it provides a way to store multiple data types, but only one type can hold a value at a time.
+###Unions are useful when you need to store values of different types, but you only need one value at a time.
+}
+{
+#Example of a Union:
+^^^
+#include <iostream>
+using namespace std;
+
+union Data {
+    int i;
+    float f;
+    char c;
+};
+
+int main() {
+    Data data;
+    
+    data.i = 5;
+    cout << "Integer: " << data.i << endl;
+    
+    data.f = 3.14f;
+    cout << "Float: " << data.f << endl;
+    
+    data.c = 'A';
+    cout << "Char: " << data.c << endl;
+    
+    return 0;
+}
+^^^
+###In this example, the union `Data` can store an `int`, `float`, or `char`, but only one of them can hold a value at a time. The value stored in the union will overwrite the previous one.
+}
+}
+{
+#Now, let's look at the basic syntax of a union! 📝
+}
+{{
+#Basic Union Syntax
+{
+##Syntax and Usage
+###To define a union in C++, use the `union` keyword followed by the name of the union and the list of members enclosed in curly braces.
+###Each member of the union will occupy the same memory space, so the size of the union will be the size of its largest member.
+}
+{
+#Example of Basic Syntax:
+^^^
+union Number {
+    int i;
+    double d;
+};
+
+int main() {
+    Number num;
+    num.i = 10;
+    cout << "Integer: " << num.i << endl;
+    
+    num.d = 20.5;
+    cout << "Double: " << num.d << endl;
+    
+    return 0;
+}
+^^^
+###Here, the union `Number` can store either an `int` or a `double`. Since both members share the same memory space, assigning a value to one member will overwrite the value of the other member.
+}
+}
+{
+#Let's explore how memory is allocated for unions! 💾
+}
+{{
+#Memory Allocation in Unions
+{
+##How Memory Works in Unions
+###In a union, all members share the same memory location. The size of the union is determined by the size of its largest member.
+###This means that only one member of the union can hold a value at any given time, and assigning a value to one member will overwrite the previous value stored in any other member.
+}
+{
+#Example of Memory Allocation:
+^^^
+union UnionExample {
+    char c;
+    int i;
+    double d;
+};
+
+int main() {
+    cout << "Size of union: " << sizeof(UnionExample) << endl; // Output: Size of largest member
+    
+    UnionExample u;
+    u.i = 10;
+    cout << "Integer: " << u.i << endl;
+    u.d = 3.14;
+    cout << "Double: " << u.d << endl;
+    
+    return 0;
+}
+^^^
+###In this example, the size of the union `UnionExample` will be the size of its largest member (`double` in this case). The `sizeof` operator gives the memory size of the union.
+}
+}
+{
+#Let's review how to access members in a union! 🔑
+}
+{{
+#Accessing Union Members
+{
+##How to Access Members
+###To access a member of a union, you simply use the dot (`.`) operator, just like accessing members of a struct or class.
+###Since all members share the same memory space, the most recently assigned member will hold the value.
+}
+{
+#Example of Accessing Union Members:
+^^^
+union Person {
+    char name[50];
+    int age;
+};
+
+int main() {
+    Person person;
+    
+    strcpy(person.name, "John Doe");
+    cout << "Name: " << person.name << endl;
+    
+    person.age = 30;
+    cout << "Age: " << person.age << endl;  // This overwrites the name stored earlier
+    
+    return 0;
+}
+^^^
+###In this example, we define a union `Person` with members `name` and `age`. First, we assign a name, then overwrite it with an age. The output will show the `age` because it was assigned last.
+}
+}
+{
+#Now, let's discuss the advantages and disadvantages of using unions! ⚖️
+}
+{{
+#Advantages and Disadvantages of Unions
+{
+##Advantages:
+###1. **Memory Efficiency**: Since all members of a union share the same memory space, it helps save memory compared to structs, where each member has its own memory space.
+###2. **Versatility**: Unions allow you to store different types of data in the same memory location, which is useful in situations where you need to store different types but use only one at a time.
+###3. **Reduced Overhead**: Unions can reduce memory usage in low-level programming, especially when working with large amounts of data.
+
+##Disadvantages:
+###1. **One Value at a Time**: Only one member of the union can hold a value at any given time. Assigning a value to one member will overwrite the value stored in the others.
+###2. **Complexity**: Unions can make code harder to understand and maintain, as the value of a member is constantly changing.
+###3. **Potential Bugs**: If you forget which member holds the current value, it can lead to bugs or unexpected behavior.
+}
+}
+{
+#Common Use Cases for Unions 🛠️
+}
+{{
+#Use Cases for Unions
+{
+##When to Use Unions?
+###1. **Low-Level Programming**: Unions are useful when working with memory management, such as writing code that interacts directly with hardware or operating systems.
+###2. **Saving Memory**: Unions are ideal when you need to store different data types but don’t need them all at once (e.g., in embedded systems where memory is limited).
+###3. **Variant Types**: Unions can be used in situations where a variable might hold different types of values at different times, such as in a language parser.
+}
+}

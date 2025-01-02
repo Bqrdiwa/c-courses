@@ -1,0 +1,66 @@
+*Source code in src/courses/errorHandeling.cpp
+*new header file that we are going to use is stdexcept
+
+{
+#In C++, error handling and exception management are implemented using exceptions.
+
+##HOW ??!!?!
+
+{
+##we use try - catch - throw components
+
+##try block
+###The code that might throw an exception is enclosed within a try block.
+
+##catch block
+###After an exception is thrown, the program searches for a corresponding catch block to handle the exception.
+
+##throw 
+###If an error occurs, an exception is thrown using the throw statement.
+}
+{
+#look at code below
+^^^
+int a=12 , b=0;
+try {
+    if (b == 0) {
+        throw std::invalid_argument("Division by zero is not allowed!");
+    }
+    std::cout << "Result: " << a / b << std::endl;
+} catch (const std::invalid_argument& e) {
+    std::cerr << "Error: " << e.what() << std::endl; // Prints the error message
+}
+^^^
+{
+##in the code above first the try block TRYS to do the block and whenever it reaches to a throw function it will
+##throw a exception with different types from the stdexcept header and a message that the errors give 
+## as params like std::invalid_argument("Division by zero is not allowed!")
+
+##then the catch block that matches the type of exception is used to handel the exception.
+## we use cerr to log out the error message that we provided in the exception function.
+## to get the msg we use the "e" refrence that is in the catch defenition e.what() will give us the msg: ).
+}
+}
+
+}
+{{
+#Example of Using Multiple catch Blocks
+{
+^^^
+int a = -5;
+try {
+    if (a < 0) {
+        throw std::invalid_argument("Negative number not allowed!");
+    } else if (a == 0) {
+        throw std::out_of_range("Zero is out of valid range!");
+    } else {
+        std::cout << "Valid number: " << a << std::endl;
+    }
+} catch (const std::invalid_argument& e) {
+    std::cerr << "Invalid argument error: " << e.what() << std::endl;
+} catch (const std::out_of_range& e) {
+    std::cerr << "Out of range error: " << e.what() << std::endl;
+}
+^^^
+}
+}}

@@ -1,0 +1,156 @@
+*Source code in src/courses/stringFunctions.cpp
+We will cover 7 string functions in C++
+
+{
+#String Functions in C++:
+##1. length()
+##2. substr()
+##3. append()
+##4. find()
+##5. replace()
+##6. compare()
+##7. c_str()
+}
+{
+#Let's begin with the first string function: length() 😊
+}
+{{
+#length()
+{
+##Definition and Usage
+###The length() function returns the number of characters in a string. It gives the length of the string excluding the null-terminator (\0).
+}
+{
+#Example of length():
+^^^
+std::string str = "Hello, world!";
+std::cout << str.length(); // Output: 13
+^^^
+###In this example, the length() function returns 13 because the string "Hello, world!" contains 13 characters.
+}
+}
+{
+#Next, let's explore the substr() function 😎
+}
+{{
+#substr()
+{
+##Definition and Usage
+###The substr() function is used to extract a substring from the original string. It takes two parameters: the starting index and the length of the substring.
+}
+{
+#Example of substr():
+^^^
+std::string str = "Hello, world!";
+std::string sub = str.substr(7, 5);
+std::cout << sub; // Output: world
+^^^
+###Here, substr(7, 5) starts at index 7 and extracts 5 characters, resulting in the substring "world".
+}
+}
+{
+#Let's move on to the append() function 💡
+}
+{{
+#append()
+{
+##Definition and Usage
+###The append() function adds a specified string or character to the end of the string.
+}
+{
+#Example of append():
+^^^
+std::string str = "Hello";
+str.append(", world!");
+std::cout << str; // Output: Hello, world!
+^^^
+###The append() function adds ", world!" to the string "Hello".
+}
+}
+{
+#Now, let's look at the find() function 🔍
+}
+{{
+#find()
+{
+##Definition and Usage
+###The find() function searches for a substring within the string. It returns the index of the first occurrence of the substring, or std::string::npos if the substring is not found.
+}
+{
+#Example of find():
+^^^
+std::string str = "Hello, world!";
+std::size_t pos = str.find("world");
+std::cout << pos; // Output: 7
+^^^
+###Here, find("world") finds the substring "world" starting at index 7.
+}
+}
+{
+#Let's check out the replace() function ✨
+}
+{{
+#replace()
+
+{
+##Definition and Usage
+###The replace() function replaces a portion of the string with another string. It takes three parameters: the starting index, the length to replace, and the string to insert.
+}
+
+{
+#Example of replace():
+^^^
+std::string str = "Hello, world!";
+str.replace(7, 5, "C++");
+std::cout << str; // Output: Hello, C++!
+^^^
+###Here, replace(7, 5, "C++") replaces the substring starting at index 7 with "C++".
+}
+}
+
+{
+#Let's move on to the compare() function 🤔
+}
+
+{{
+#compare()
+{
+##Definition and Usage
+###The compare() function compares two strings lexicographically. It returns a value less than, equal to, or greater than 0 based on the comparison result.
+}
+
+{
+#Example of compare():
+^^^
+std::string str1 = "apple";
+std::string str2 = "banana";
+std::cout << str1.compare(str2); // Output: -1
+^^^
+###Since "apple" is lexicographically less than "banana", compare() returns a negative value.
+##n lexicographical (dictionary) order, strings are compared character by character based on their ASCII values. The comparison stops as soon as a difference is found.
+
+### like 1 in ASCII is 49 and 2 in ASCII is 50 so 1 is less than 2 lexicographically 
+}
+}
+
+{
+#Finally, let's explore the c_str() function 📝
+}
+
+{{
+#c_str()
+{
+##Definition and Usage
+###The c_str() function returns a pointer to constant character array (C-style string) from a C++ string. This is useful for passing a string to functions that expect a const char*.
+}
+{
+#Example of c_str():
+^^^
+std::string str = "Hello, world!";
+const char* cstr = str.c_str();
+std::cout << cstr; // Output: Hello, world!
+^^^
+###Here, c_str() converts the C++ string "Hello, world!" to a C-style string, and it is then printed.
+}
+}
+

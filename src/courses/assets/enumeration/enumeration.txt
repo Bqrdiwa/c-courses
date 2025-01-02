@@ -1,0 +1,136 @@
+*Source code in src/courses/enumeration.cpp
+In this lesson, we will explore the concept of Enumerations (enums) in C++, a powerful feature that allows you to define named constants.
+
+{
+#Enumerations in C++:
+##1. What is an Enumeration?
+##2. Basic Enumeration Syntax
+##3. Enumerations with Specific Values
+##4. Enum Class (Scoped Enumerations)
+##5. Advantages of Using Enumerations
+##6. Common Use Cases
+}
+{
+#Let's dive into Enumerations in C++! 🔢
+}
+{{
+#What is an Enumeration?
+{
+##Definition and Usage
+###An enumeration (enum) is a user-defined data type in C++ that consists of a set of named integer constants. It provides a way to associate a name with a set of related values, making your code more readable and maintainable.
+###Enumerations are often used to represent a set of possible states, options, or categories.
+}
+{
+#Example of an Enumeration:
+^^^
+#include <iostream>
+using namespace std;
+
+enum Day { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
+
+int main() {
+    Day today = Wednesday;
+    cout << "Today is day number " << today << endl; // Output: 3
+    return 0;
+}
+^^^
+###In this example, we define an enumeration `Day` representing the days of the week. The values of the enumeration start from 0 (Sunday = 0, Monday = 1, etc.).
+}
+}
+{
+#Now, let's look at the basic syntax of an enumeration! ✍️
+}
+{{
+#Basic Enumeration Syntax
+{
+##Syntax and Usage
+###To define an enum in C++, use the `enum` keyword followed by the name of the enumeration, and a list of values enclosed in curly braces.
+###By default, the first value of an enumeration is assigned the value 0, and each subsequent value is incremented by 1.
+}
+{
+#Example of Basic Syntax:
+^^^
+enum Color { Red, Green, Blue };
+
+int main() {
+    Color favoriteColor = Green;
+    cout << "My favorite color has value " << favoriteColor << endl; // Output: 1
+    return 0;
+}
+^^^
+###In this example, the `Color` enumeration has three values: `Red`, `Green`, and `Blue`. The value of `Green` is 1 because it is the second value in the list.
+}
+}
+{
+#Next, let's learn how to assign specific values to enum items! 🎨
+}
+{{
+#Enumerations with Specific Values
+{
+##Custom Values
+###You can assign specific integer values to the items in an enumeration. This is helpful if you want to control the value associated with each item or if you want to have non-sequential values.
+}
+{
+#Example of Enumeration with Specific Values:
+^^^
+enum Status { Pending = 1, InProgress = 5, Completed = 10 };
+
+int main() {
+    Status currentStatus = InProgress;
+    cout << "Current status has value " << currentStatus << endl; // Output: 5
+    return 0;
+}
+^^^
+###Here, we assign custom values to the enumeration items. `Pending` is 1, `InProgress` is 5, and `Completed` is 10.
+}
+}
+{
+#Let's explore Enum Classes (Scoped Enumerations)! 🔐
+}
+{{
+#Enum Class (Scoped Enumerations)
+{
+##What is an Enum Class?
+###An `enum class` (or scoped enumeration) is a more modern way to define enumerations in C++. It improves type safety by scoping the enumerator values within the enum class and preventing implicit conversions to other types.
+###Enum classes prevent name conflicts by limiting the visibility of the enumerator names to the scope of the enum class itself.
+}
+{
+#Example of Enum Class:
+^^^
+enum class Month { January = 1, February, March, April, May, June, July, August, September, October, November, December };
+
+int main() {
+    Month currentMonth = Month::July;
+    cout << "Current month is " << static_cast<int>(currentMonth) << endl; // Output: 7
+    return 0;
+}
+^^^
+###In this example, we define a scoped enumeration `Month`. The enumerator names like `January`, `February`, etc., are scoped under `Month`, and we use the `static_cast` to convert the enum to its underlying integer value.
+}
+}
+{
+#Let's review the advantages of using Enumerations! 🌟
+}
+{{
+#Advantages of Using Enumerations
+{
+##Why Use Enums?
+###- **Improved Code Readability**: Enums make code more readable by giving meaningful names to values instead of using arbitrary integers.
+###- **Maintainability**: If you need to change the values, you only need to modify the enum definition, rather than searching through the entire code for hardcoded constants.
+###- **Type Safety**: Enum classes provide stronger type safety by preventing implicit conversions to other types.
+###- **Cleaner Code**: Enumerations reduce the use of magic numbers (arbitrary numeric values), making your code cleaner and more understandable.
+}
+}
+{
+#Common Use Cases of Enumerations 🧑‍💼
+}
+{{
+#Common Use Cases
+{
+##Where to Use Enums?
+###1. **State Management**: Enums are commonly used to represent different states in a program, such as `Pending`, `InProgress`, and `Completed`.
+###2. **Options/Settings**: Enums can represent options in a configuration or settings menu, such as `Low`, `Medium`, `High`.
+###3. **Categories**: Enums are useful to represent categories, such as `Admin`, `Editor`, `Viewer` for user roles.
+###4. **Days of the Week or Months of the Year**: As we saw in earlier examples, enums are a good fit for representing days or months.
+}
+}

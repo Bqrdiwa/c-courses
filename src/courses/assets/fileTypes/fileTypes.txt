@@ -1,0 +1,261 @@
+*Source code in src/courses/fileTypes.cpp
+*new header file that we are going to use is fstream
+
+{#Type of files:
+    ##1. Text files
+        ###Stores data in human-readable format like .txt files.
+    ##2. Binary files
+        ###Stores data in machine-readable format like .bin files.
+}
+
+{#C++ provides the <fstream> header for file operations, which includes:
+    ##1. ofstream: For creating and writing to files.
+    ##2. ifstream: For reading from files.
+    ##3. fstream: For both reading and writing. //as we are going to discuss the first two so the fstream is so easy for learning so we are not going to discuss abot this header.
+}
+{
+#Lets jump into first header ofstream :D
+}
+{{
+#<ofstream>
+
+{##Defenition And Usage
+### The ofstream class (short for "output file stream") is used to write into files.
+### The ofstream class is defined in the <fstream> header file.
+}
+{
+#lets open a new file to write in it
+##first use this line of code below to open a file and pass the path into the constructor.
+^^^
+ofstream openedFile("example.txt"); //for second param we could give it a flag but we discuss it in the course
+^^^
+}
+{
+##okay now we opened example.txt in openedFile for writing into the file 
+
+#we can use << (the insertation operator) or we can use variety of functions
+##first lets use the insertation operator (<<):
+###look at the code below 
+^^^
+int number = 2024;
+openedFile << "This is my number: " << number << "\n";
+^^^
+}
+{
+###we used the << operator to write in the file
+
+###Also we can use manipulators in here too
+###like boolalpha, endl, ends(used to end in C-style strings), setw, left, right and etc...
+}
+{
+##now lets use functions to write into the file:
+}
+{
+###write(str, n) // writes n characters from the char array str into the file.
+^^^
+char myStr[] = "Hello World!";
+MyFile.write(myStr, 5);
+^^^
+}
+{
+###put(c) writes the specified character c into the file.
+^^^
+char grade = 'A';
+MyFile.put(grade);
+^^^
+}
+{
+#File Handling Functions
+}
+{
+##open(filepath, flag) opens the file at the path specified by filepath.
+{## for flag we have these options :
+
+###ios::out
+###Default flag for ofstream. It opens the file for writing. If the file already exists, it truncates the file to zero length (erases its contents).
+}
+{###ios::app
+###Opens the file in append mode. If the file already exists, new data is written at the end of the file instead of overwriting its current contents.
+}
+{###ios::trunc
+###Truncates the file to zero length if it already exists (removes its contents). This is the default behavior when opening a file with ios::out.
+{
+{
+###ios::binary
+###Opens the file in binary mode. This is necessary when writing non-text data (like images or other binary files). Without this flag, the file will be opened in text mode.
+}
+{
+###ios::ate
+###Opens the file and moves the file pointer to the end. You can still write to the file starting from the end, but unlike ios::app, this does not automatically append data; you can overwrite the file content as well.
+}
+{
+###ios::in
+###Used in conjunction with ifstream (input file stream) to open a file for reading, but generally not used with ofstream since it’s for writing. However, in some cases, it might be used in combination with other flags.
+}
+
+
+^^^
+ofstream MyFile;
+MyFile.open("filename.txt", std::ios::app); //opens for appending data to it.
+^^^
+}
+{
+##is_open() returns true if a file is open and false if there is no file open.
+^^^
+ofstream MyFile;
+cout << MyFile.is_open(); << "\n"; // Displays 0 because the file is not open
+MyFile.open("filename.txt");
+cout << MyFile.is_open(); << "\n"; // Displays 1 because the file is open
+^^^
+}
+{
+##close() closes a file. It is good to close a file when you are finished working with it to free up resources.
+^^^
+MyFile.close();
+^^^
+}
+{
+##rdbuf() returns a pointer to the internal filebuf object which directly handles the file.
+^^^
+filebuf * buf = MyFile.rdbuf();
+^^^
+}
+{
+##seekp(position) moves the file pointer to a specified position relative to the beginning of the file.
+^^^
+MyFile.seekp(6)
+^^^
+
+##seekp(position, origin) moves the file pointer to a specified position in the file relative to an origin. The origin has three
+###ofstream::beg - The position is relative to the beginning of the file.
+###ofstream::cur - The position is relative to the current file position.
+###ofstream::end - The position is relative to the end of the file.
+^^^
+MyFile.seekp(6, ofstream::beg);
+cout << MyFile.tellp(); << "\n";
+MyFile.seekp(-3, ofstream::cur);
+cout << MyFile.tellp(); << "\n";
+MyFile.seekp(-4, ofstream::end);
+cout << MyFile.tellp(); << "\n";
+^^^
+}
+{
+##tellp() returns the current position of the file pointer in the file.
+^^^
+cout << MyFile.tellp();
+^^^
+}
+
+}}
+
+{{
+#Lets jump into second header ifstream :D 
+
+{
+<ifstream>
+}
+{    
+##Defenition And Usage
+### The ifstream class (short for "input file stream") is used to read from files.
+### The ifstream class is defined in the <fstream> header file.
+}
+{
+#For reading a file first of all we need to open it :/ like before
+
+    ##stupid ones:
+        ###HOW !?!??!?!?!
+    ##normal guy:
+        ###just like writing into a file but the difference in here is that we are using ifstream(reading file header)
+        ###just like this
+
+        ^^^
+        ifstream TheFile("filename.txt");
+        ^^^
+    ##stupid ones:
+        ###OH I see :) thx btw
+}
+{
+#now lets read from the opened file 
+#we can use getline from the ifstream header
+
+##it will read all of the characters up to the next line break.
+##the getline function gets two params
+##first the opened file and second string variable to store the line in it
+##then it returns back the status of the readed line
+##if the line readed successfully  it return a stream , which evaluates as true.
+##if the line readed unsuccessfullt or it reaches the end of the file (EOF) the stream stats is gonna be "failed" and evaluates as false.
+
+#so with the explanation above we can use a while loop to get all of the lines 
+
+^^^
+std::string document;
+std::string line;
+while (getline(TheFile, line))
+{
+	document += line;
+}
+std::cout << document;
+^^^
+}
+{
+#now its time for the functions :)
+
+{
+## get() //reads a single chars rrom a file and returns ASCII value as an int value.
+### u can convert it to char to actually see the character
+### btw, after reading a char the file pointer is moved to next character in file.
+
+^^^
+char firstChar = TheFile.get();
+std::cout << firstChar;
+^^^
+
+##get(destination, size, delimiter) //it will read "size" chars from the file and puts it  into the destination buffer(char type with size of "size" and it stops reading if it reaches the delimeter
+
+### the value written in destination always ends with \0 (null termination char). this method moves the file pointer to the newxt line break or delimiter where it stopped reading.
+^^^
+char dest[50];
+TheFile.get(dest, 50, '.');
+cout << dest;
+^^^
+}
+{
+##read(destination, n) it will read n chars from the file and writes them into the char array specified by the destination param. :) but BUT BUTT it will not stop at line breaks AND it does not add null terminating char ti the data so we should do it manually.
+
+^^^
+char dest[50];
+TheFile.read(dest, 49 // just for adding the \0 out selves);
+cout << dest;
+^^^
+}
+{
+##peek() //its the get() func : ), but BUTT the difference is that it does not move the file pointer.
+}
+{
+##gcount() returns the number of chars that have been extracted from the file 
+^^^
+char dest[20];
+TheFile.getline(dest, 20);
+cout << TheFile.gcount();
+^^^
+}
+{
+#Now The File Handeling Part :) its easy WHY ?
+## cause we learned open, is_open, close, rdbuf, seekg, tellg before in ofstream header
+
+{
+##uget // this method will moves the file pointer bac by one character.
+^^^
+char theChar = TheFile.get();
+cout << theChar;
+TheFile.uget();
+theChar = TheFile.get();
+cout << theChar << " look its the same char :D";
+^^^
+}
+}
+}
+
+}}
+
+

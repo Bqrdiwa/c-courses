@@ -1,0 +1,99 @@
+*Source code in src/courses/macros.cpp
+In this lesson, we will explore C++ macros and their usage.
+
+{
+#Macros in C++:
+##1. What is a Macro?
+##2. Defining Macros
+##3. Using Macros
+##4. Advantages of Macros
+##5. Predefined Macros
+}
+{
+#Let's begin with the basics: What is a Macro? 🤔
+}
+{{
+#What is a Macro?
+{
+##Definition and Usage
+###A macro is a preprocessor directive in C++ that allows you to define a block of code that gets replaced by a specified value or expression before compilation. 
+###It simplifies code maintenance and reduces redundancy.
+}
+{
+#Example of a simple macro:
+^^^
+#define PI 3.14159
+std::cout << PI; // Output: 3.14159
+^^^
+###In this example, the macro `PI` is replaced with `3.14159` during preprocessing, so when we print `PI`, it outputs the value `3.14159`.
+}
+}
+{
+#Now, let's explore how to define macros. ✏️
+}
+{{
+#Defining Macros
+{
+##Definition and Usage
+###Macros are defined using the `#define` directive followed by the macro name and its replacement value.
+###For example:
+}
+{
+#Example of defining a macro:
+^^^
+#define MAX(a, b) ((a) > (b) ? (a) : (b))
+std::cout << MAX(10, 20); // Output: 20
+^^^
+###Here, the macro `MAX(a, b)` compares two values and returns the larger one. The values `10` and `20` are passed in, and the macro evaluates the maximum.
+}
+}
+{
+#Let's look at using macros in conditional compilation 🔧
+}
+{{
+#Using Macros
+{
+##Definition and Usage
+###Macros can also be used to include or exclude certain sections of code based on conditions. This is useful for debugging or platform-specific code.
+}
+{
+#Example of conditional compilation:
+^^^
+#define DEBUG
+#ifdef DEBUG
+    std::cout << "Debugging enabled!" << std::endl;
+#endif
+^^^
+###In this example, the message "Debugging enabled!" will be printed only if the `DEBUG` macro is defined.
+}
+}
+{
+#Next, let's talk about the advantages of using macros. 🚀
+}
+{{
+#Advantages of Macros
+{
+##Why use Macros?
+###- **Code Reusability:** Macros help you avoid writing the same code repeatedly.
+###- **Improved Readability:** Macros can make your code easier to read by abstracting complex expressions.
+###- **Conditional Compilation:** Macros are great for compiling code conditionally, such as enabling or disabling debugging features.
+}
+}
+{
+#Now, let's explore some predefined macros in C++ 📚
+}
+{{
+#Predefined Macros
+{
+##Definition and Usage
+###C++ provides several predefined macros that give information about the compilation environment, such as file name, line number, etc.
+###For example:
+}
+{
+#Example of predefined macros:
+^^^
+std::cout << __FILE__ << " at line " << __LINE__ << std::endl;
+^^^
+###The `__FILE__` and `__LINE__` macros give you the current file name and line number, respectively. This is useful for debugging.
+}
+}

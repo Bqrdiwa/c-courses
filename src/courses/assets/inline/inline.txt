@@ -1,0 +1,113 @@
+*Source code in src/courses/inline_function.cpp
+In this lesson, we will explain the concept of **inline functions** in C++ and how they can improve the performance of your programs.
+
+{
+#Inline Functions in C++:
+##1. What is an inline function?
+##2. How does an inline function work?
+##3. Benefits of using inline functions
+##4. When to use inline functions
+##5. Limitations of inline functions
+}
+{
+#Let’s get started with inline functions! 🚀
+}
+{{
+#What is an inline function? 📝
+{
+##Definition of Inline Function
+###An inline function is a function whose code is directly inserted at the point of function call. Instead of performing a regular function call (which involves pushing data to the stack, jumping to the function code, etc.), the compiler replaces the function call with the function’s code itself. This is known as *function inlining*.
+
+###Inline functions are typically used for small, frequently called functions to eliminate the overhead associated with function calls, which can make the program run faster.
+
+####Syntax of an Inline Function:
+^^^
+inline return_type function_name(parameters) {
+    // Function body
+    return result;
+}
+^^^
+}
+}
+{
+#How does an inline function work? 🤔
+}
+{{
+#Function Call Without Inline:
+{
+###Normally, when you call a function, the following steps occur:
+###1. The control is transferred to the function’s location.
+###2. The parameters are pushed onto the stack.
+###3. The function executes.
+###4. The return value (if any) is pushed onto the stack.
+###5. The control is returned to the calling function.
+}
+
+#Function Call With Inline:
+{
+###With an inline function, the compiler replaces the function call with the function’s code directly, skipping the overhead of a normal function call. This can improve performance, especially for small functions that are called frequently.
+}
+}
+{
+#Benefits of Using Inline Functions 💡
+}
+{{
+#Advantages of Inline Functions:
+{
+###1. **Improved Performance**: The main benefit of inline functions is that they avoid the overhead of function calls, which can result in performance gains, especially for small functions.
+###2. **Code Optimization**: Inline functions help the compiler perform better optimizations, like constant folding and loop unrolling, when the code is expanded directly.
+###3. **Readability and Maintainability**: Small functions can be kept inline without the need to worry about separate function calls, making the code more readable.
+}
+}
+{
+#When to Use Inline Functions 🤖
+}
+{{
+#When Should You Use Inline Functions?
+{
+###Inline functions are particularly useful in the following situations:
+###1. **Short Functions**: Functions that consist of only a few lines of code, such as simple getters, setters, or mathematical operations.
+###2. **Frequently Called Functions**: Functions that are called many times in a program, like helper functions in a tight loop.
+###3. **Constant Expressions**: Functions that are used in constant expressions, where inline substitution can reduce runtime computation.
+
+####Example of when to use an inline function:
+^^^
+inline int square(int x) {
+    return x * x;
+}
+^^^
+###In this case, `square()` is a very simple function that can benefit from being inlined. The compiler will replace the call to `square(x)` with the expression `x * x` directly in the code.
+}
+}
+{
+#Limitations of Inline Functions 🚧
+}
+{{
+#Disadvantages of Inline Functions:
+{
+###1. **Code Bloat**: If you use inline functions excessively, the code size may increase because the function’s code is inserted wherever it is called. This can increase the size of your binary.
+###2. **Compiler Discretion**: The `inline` keyword is a request to the compiler, not a command. The compiler may choose not to inline the function if it deems it inefficient to do so, especially for large functions.
+###3. **Debugging Difficulty**: Debugging inline functions can be harder because their code is inserted into the calling function, making it harder to step through individual function calls in the debugger.
+}
+}
+{{
+#Example of Inline Function:
+^^^
+#include <iostream>
+using namespace std;
+
+// Inline function definition
+inline int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int result = add(5, 3);  // Inline function call
+    cout << "The sum is: " << result << endl;
+    return 0;
+}
+^^^
+###In this example, the function `add()` is marked as `inline`. The compiler will replace the function call `add(5, 3)` with the body of the function, `return 5 + 3;`, directly at the point of the call.
+}
+}}
+

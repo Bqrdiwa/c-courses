@@ -1,0 +1,233 @@
+*Source code in src/courses/vector.cpp
+In this lesson, we will learn about **Vectors** in C++, a powerful and dynamic container from the Standard Template Library (STL) that stores elements in a sequence.
+
+{
+#Vectors in C++:
+##1. What is a Vector?
+##2. Basic Vector Syntax
+##3. Vector Initialization
+##4. Accessing Vector Elements
+##5. Modifying Vectors
+##6. Advantages of Using Vectors
+##7. Common Use Cases
+}
+{
+#Let's dive into Vectors in C++! 🚀
+}
+{{
+#What is a Vector?
+{
+##Definition and Usage
+###A **vector** is a dynamic array-like container that can grow and shrink in size automatically as elements are added or removed. Vectors are part of the C++ Standard Template Library (STL).
+###Vectors provide the flexibility to store data of the same type, but unlike regular arrays, they don't have a fixed size and can easily expand or contract during runtime.
+}
+{
+#Example of a Vector:
+^^^
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> numbers;  // Create an empty vector of integers
+    
+    // Add elements to the vector
+    numbers.push_back(10);
+    numbers.push_back(20);
+    numbers.push_back(30);
+    
+    // Print vector elements
+    for (int i = 0; i < numbers.size(); i++) {
+        cout << numbers[i] << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+^^^
+###In this example, we create a vector `numbers` of integers and use the `push_back()` function to add elements. We then print out the vector elements using a loop.
+}
+}
+{
+#Now, let's look at the basic syntax of a vector! 📝
+}
+{{
+#Basic Vector Syntax
+{
+##Syntax and Usage
+###To define a vector in C++, use the `vector` keyword followed by the type of elements the vector will store in angle brackets. For example, `vector<int>` defines a vector of integers.
+###Vectors automatically resize themselves when elements are added or removed.
+}
+{
+#Example of Basic Syntax:
+^^^
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<string> names;  // Create an empty vector of strings
+    
+    names.push_back("Alice");
+    names.push_back("Bob");
+    names.push_back("Charlie");
+    
+    // Print vector elements
+    for (auto& name : names) {
+        cout << name << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+^^^
+###In this example, we define a vector `names` of type `string`. We use `push_back()` to add strings to the vector and then print them out using a range-based for loop.
+}
+}
+{
+#Next, let's explore how to initialize a vector! 🔄
+}
+{{
+#Vector Initialization
+{
+##How to Initialize a Vector
+###A vector can be initialized in several ways:
+####1. **Default Initialization**: A vector is created without any elements.
+####2. **Initialized with Elements**: A vector is created and initialized with values.
+####3. **Initialization with Size**: A vector is created with a predefined size and optional values.
+}
+{
+#Examples of Vector Initialization:
+^^^
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    // Default Initialization
+    vector<int> vec1; // Empty vector
+    
+    // Initialized with Elements
+    vector<int> vec2 = {1, 2, 3, 4, 5};
+    
+    // Initialized with Size
+    vector<int> vec3(5, 10); // Creates a vector with 5 elements, each initialized to 10
+    
+    // Print elements of vec2 and vec3
+    for (auto& num : vec2) {
+        cout << num << " ";
+    }
+    cout << endl;
+    
+    for (auto& num : vec3) {
+        cout << num << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+^^^
+###Here, `vec2` is initialized with a list of integers, while `vec3` is created with 5 elements, all initialized to the value `10`. `vec1` is just an empty vector.
+}
+}
+{
+#Let's explore how to access vector elements! 🔑
+}
+{{
+#Accessing Vector Elements
+{
+##How to Access Elements
+###To access vector elements, you can use the subscript operator (`[]`) or the `at()` method. The subscript operator is faster but does not check bounds, while `at()` performs bounds checking and throws an exception if the index is out of range.
+}
+{
+#Example of Accessing Elements:
+^^^
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> numbers = {10, 20, 30, 40, 50};
+    
+    // Using subscript operator
+    cout << "First element: " << numbers[0] << endl;
+    
+    // Using at() method (with bounds checking)
+    cout << "Second element: " << numbers.at(1) << endl;
+    
+    return 0;
+}
+^^^
+###In this example, we access the first and second elements of the vector using the subscript operator and the `at()` method.
+}
+}
+{
+#Now, let's see how we can modify vectors! 🔧
+}
+{{
+#Modifying Vectors
+{
+##Modifying Elements
+###You can modify elements in a vector using the subscript operator (`[]`) or the `at()` method. You can also add new elements using `push_back()` or remove elements using `pop_back()`.
+###To insert an element at a specific position, you can use the `insert()` method.
+}
+{
+#Examples of Modifying Vectors:
+^^^
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> numbers = {1, 2, 3, 4, 5};
+    
+    // Modify elements
+    numbers[2] = 100;  // Change 3rd element (index 2) to 100
+    
+    // Add elements
+    numbers.push_back(6);
+    
+    // Remove last element
+    numbers.pop_back();
+    
+    // Insert at specific position
+    numbers.insert(numbers.begin() + 1, 50); // Insert 50 at the second position
+    
+    // Print modified vector
+    for (auto& num : numbers) {
+        cout << num << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+^^^
+###Here, we modify an element using the subscript operator, add a new element with `push_back()`, remove the last element with `pop_back()`, and insert a value at a specific position with `insert()`.
+}
+}
+{
+#Let's discuss the advantages of using vectors! 🌟
+}
+{{
+#Advantages of Using Vectors
+{
+##Why Use Vectors?
+###1. **Dynamic Size**: Vectors can grow and shrink automatically, unlike arrays that have a fixed size.
+###2. **Ease of Use**: Vectors provide a simple and easy-to-use interface for adding, removing, and accessing elements.
+###3. **Efficient Memory Management**: Vectors handle memory allocation internally, optimizing space usage as the vector grows.
+###4. **STL Compatibility**: Vectors are part of the Standard Template Library (STL) and work seamlessly with other STL algorithms.
+}
+}
+{
+#Common Use Cases for Vectors 💼
+}
+{{
+#Common Use Cases
+{
+##When to Use Vectors?
+###1. **Dynamic Arrays**: When you need an array that can grow or shrink dynamically during runtime, vectors are a great choice.
+###2. **Efficient Searching and Sorting**: Vectors work well with algorithms like sorting and binary search.
+###3. **Storage for Collections**: Vectors are often used to store collections of objects, such as a list of users, products, or events.
+###4. **When Working with STL Algorithms**: Vectors work smoothly with many of the algorithms in the Standard Template Library (STL), such as `sort()`, `find()`, and `reverse()`.
+}
+}

@@ -1,0 +1,109 @@
+*Source code in src/courses/insertionSort.cpp
+In this lesson, we will explore the Insertion Sort algorithm, one of the simplest sorting algorithms.
+
+{
+#Insertion Sort Algorithm:
+##1. What is Insertion Sort?
+##2. How Insertion Sort Works
+##3. Example of Insertion Sort
+##4. Time Complexity
+##5. Advantages and Disadvantages
+}
+{
+#Let's start by understanding Insertion Sort! 💡
+}
+{{
+#What is Insertion Sort?
+{
+##Definition and Usage
+###Insertion Sort is a simple comparison-based sorting algorithm. It builds the final sorted array one item at a time, by repeatedly inserting each element into its correct position.
+###It is much like sorting playing cards in your hands, where you pick up one card at a time and insert it into the right position.
+}
+{
+#Example of Insertion Sort:
+^^^
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void insertionSort(vector<int>& arr) {
+    for (int i = 1; i < arr.size(); i++) {
+        int key = arr[i];
+        int j = i - 1;
+
+        // Move elements of arr[0..i-1], that are greater than key, to one position ahead
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+}
+
+int main() {
+    vector<int> arr = {12, 11, 13, 5, 6};
+    insertionSort(arr);
+    for (int num : arr) {
+        cout << num << " ";
+    }
+    return 0;
+}
+^^^
+###In this example, the Insertion Sort algorithm sorts the array `{12, 11, 13, 5, 6}` by inserting each element into its correct position relative to the already-sorted portion of the array.
+}
+}
+{
+#Now, let's break down how Insertion Sort works! 🧐
+}
+{{
+#How Insertion Sort Works
+{
+##Step-by-Step Process:
+###1. The algorithm starts with the second element (index 1) and assumes the first element (index 0) is already sorted.
+###2. The current element is compared to the sorted portion of the array and inserted into its correct position.
+###3. This process is repeated for each element in the array, until the entire array is sorted.
+}
+{
+#Visualizing Insertion Sort:
+^^^
+[12, 11, 13, 5, 6]  --> Start with 11, compare it with 12, insert 11 at the correct position.
+[11, 12, 13, 5, 6]  --> Move to 13, it's already in the correct position.
+[11, 12, 13, 5, 6]  --> Move to 5, shift 13, 12, and 11 to insert 5 at the beginning.
+[5, 11, 12, 13, 6]  --> Finally, move to 6, shift 13 to insert 6 in the correct spot.
+[5, 6, 11, 12, 13]  --> Sorted!
+^^^
+###In this step-by-step visualization, we can see how each element gets inserted into its correct position as we move through the array.
+}
+}
+{
+#Let's discuss the time complexity of Insertion Sort ⏳
+}
+{{
+#Time Complexity
+{
+##Definition and Analysis
+###- **Best Case (O(n))**: The array is already sorted, and the algorithm only makes one pass through the array to confirm that no shifts are needed.
+###- **Average and Worst Case (O(n^2))**: In the worst case, the array is in reverse order, and each element will need to be compared and shifted multiple times.
+###- **Space Complexity (O(1))**: Insertion Sort is an **in-place** sorting algorithm, meaning it requires only a constant amount of additional space.
+}
+}
+{
+#Advantages and Disadvantages of Insertion Sort ⚖️
+}
+{{
+#Advantages
+{
+##Why Use Insertion Sort?
+###- **Simplicity**: The algorithm is easy to understand and implement.
+###- **Efficient for Small Data**: It performs well on small datasets and nearly sorted arrays.
+###- **Stable**: Insertion Sort does not change the relative order of elements with equal values.
+}
+}
+{
+#Disadvantages
+{
+##Limitations of Insertion Sort:
+###- **Inefficient for Large Data**: The algorithm’s time complexity of O(n^2) makes it inefficient for large datasets.
+###- **Not Parallelizable**: It cannot be easily parallelized for improved performance on large-scale systems.
+}
+}

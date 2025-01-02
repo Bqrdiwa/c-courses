@@ -1,0 +1,240 @@
+*Source code in src/courses/templates.cpp
+In this lesson, we will explore the concept of Templates in C++, which allow you to write generic code that works with any data type.
+
+{
+#Templates in C++:
+##1. What are Templates?
+##2. Function Templates
+##3. Class Templates
+##4. Template Specialization
+##5. Advantages of Using Templates
+##6. Template Limitations
+}
+{
+#Let's start with an introduction to Templates in C++! 🧑‍💻
+}
+{{
+#What are Templates?
+{
+##Definition and Usage
+###Templates in C++ allow you to write functions and classes that can operate with any data type. They enable **generic programming**, where the same code can work with different types without duplication.
+###Templates help reduce code redundancy and improve maintainability by allowing you to use the same code for multiple data types.
+
+{
+##Important note 
+###The function or anything that uses templates are not going to be created until they were call from the actual
+###code for example we make a function with templates and if we have multiple errors in funcion the compiler is not going to
+###give us errors becuase the function is not created is will created for specific date type whenever it get called!!
+
+}
+}
+{
+#Example of Template Usage:
+^^^
+#include <iostream>
+using namespace std;
+
+template <typename T>
+T add(T a, T b) {
+    return a + b;
+}
+
+int main() {
+    cout << add(3, 4) << endl;         // Output: 7
+    cout << add(3.5, 4.5) << endl;     // Output: 8
+    cout << add('a', 'b') << endl;     // Output: 195 (ASCII of 'a' + 'b')
+    return 0;
+}
+^^^
+###In this example, the `add` function is defined as a template that works with any data type (like `int`, `double`, and `char`).
+
+
+}
+}
+{
+#Let's discuss Function Templates in more detail! 🔧
+}
+{{
+#Function Templates
+{
+##Definition and Usage
+###A function template is a blueprint for creating functions that can work with any data type. It allows you to define a function that operates on generic types.
+###The syntax uses the `template` keyword followed by a placeholder type (usually `T`) that can be replaced with actual types during function calls.
+}
+{
+#Example of Function Template:
+^^^
+template <typename T>
+T multiply(T a, T b) {
+    return a * b;
+}
+
+int main() {
+    cout << multiply(2, 5) << endl;         // Output: 10
+    cout << multiply(2.5, 4.5) << endl;     // Output: 11.25
+    return 0;
+}
+^^^
+###Here, the `multiply` function template works for both integers and floating-point numbers.
+}
+}
+{
+#Now, let's look at Class Templates! 🏗️
+}
+{{
+#Class Templates
+{
+##Definition and Usage
+###A class template is similar to a function template but used to create classes that can work with any data type. With class templates, you can define a class that can store or operate on different types of data.
+###Class templates are used to create more flexible and reusable classes.
+}
+{
+#Example of Class Template:
+^^^
+template <typename T>
+class Box {
+    private:
+        T value;
+    public:
+        Box(T val) : value(val) {}
+        T getValue() { return value; }
+};
+
+int main() {
+    Box<int> intBox(10);
+    Box<double> doubleBox(5.5);
+    
+    cout << intBox.getValue() << endl;        // Output: 10
+    cout << doubleBox.getValue() << endl;     // Output: 5.5
+    return 0;
+}
+^^^
+###In this example, the `Box` class is defined as a template that can store any type of data (`int`, `double`, etc.).
+}
+}
+{
+#Let's explore Template Specialization! 🎯
+}
+{{
+#Template Specialization
+{
+##Definition and Usage
+###Template specialization allows you to define a custom implementation of a template for a specific data type.
+###This is useful when you want to provide a specialized version of a template function or class for a particular type that behaves differently.
+}
+{
+#Example of Template Specialization:
+^^^
+template <typename T>
+void print(T val) {
+    cout << "General template: " << val << endl;
+}
+
+// Template specialization for char type
+template <>
+void print<char>(char val) {
+    cout << "Char template: " << val << endl;
+}
+
+int main() {
+    print(42);         // General template: 42
+    print("Hello!");   // General template: Hello!
+    print('A');        // Char template: A
+    return 0;
+}
+^^^
+###Here, the `print` function is specialized for the `char` type, providing a custom behavior when printing a character.
+}
+}
+{
+#Advantages of Using Templates 🚀
+}
+{{
+#Advantages
+{
+##Why Use Templates?
+###- **Code Reusability**: Templates allow you to write one function or class that works with many types, reducing the need for repetitive code.
+###- **Type Safety**: Templates are checked at compile time, which ensures type safety and eliminates the need for type casting.
+###- **Flexibility**: Templates provide flexibility to create functions and classes that work with any type without knowing the exact type ahead of time.
+}
+}
+{
+#Template Limitations ⚠️
+}
+{{
+#Limitations
+{
+##Challenges with Templates:
+###- **Compilation Time**: Template code can increase compilation time due to multiple instantiations of the template with different types.
+###- **Code Bloat**: Since a separate copy of the code is generated for each type, templates can cause code bloat (increased size of the compiled code).
+###- **Error Messages**: Template error messages can be difficult to understand, especially for complex templates.
+}
+}
+{{
+#bacuase this is my main topic for the class ( in university)
+#i want to got deeeeeeeeeeeeeep
+
+{
+##look at this example
+
+^^^
+#include <iostream>
+
+template <typename T>
+T add(T a,T b){
+    return (a * b)
+}
+
+int main(){
+    int x = add(3, 1.5);
+    cout << x;
+    return 0;
+}
+^^^
+
+## haha we will get error out of this why ?
+###cause we are saying T type is gonna be int by passing 3 into the function and 
+###in the second param whe are giving it double (float) and its not OK
+
+##how to fix this ?
+{
+#Simply create type for the secont param :D
+#like this
+
+^^^
+template <typename T, typename X>
+T add(T a,X b){
+    return (a * b)
+}
+^^^
+###now if we pass the 3 and 1.5 we going to get .....
+{
+#1) ERROR ?
+#2) 4
+#3) 4.5
+#4) 4.0
+
+{
+## the answer is 4 because we are returning the T typename and its int in this case 
+## because we are giving 3 first to the function which is integer :/
+
+{
+# how to fix ?
+# just add auto for defining the function and then the compiler will automaticly set the type for u :DEBUG
+## look at  this
+
+{
+^^^
+template <typename T, typename X>
+auto add(T a,X b){
+    return (a * b)
+}
+^^^
+### Now we are good 
+{
+# So we learned templates but its not all of it 
+## and its already 236 lines in this course so i cant put any more content in here :(
+
+{
+# and templates can be soooooo much difficult when we go in them super deep :)
+}}

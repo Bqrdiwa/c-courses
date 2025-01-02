@@ -1,0 +1,227 @@
+*Source code in src/courses/errors.cpp
+We will cover different types of errors in C++
+
+{
+#Types of Errors in C++:
+##1. Syntax Errors
+###These occur when the code violates the grammar rules of C++. The compiler detects them and gives an error message.
+##2. Runtime Errors
+###These errors occur while the program is running. They usually cause the program to crash or behave unexpectedly.
+##3. Logical Errors
+###These errors occur when the program runs without crashing, but the output is incorrect. The code logic is flawed.
+##4. Linker Errors
+###These occur when the program fails to link external libraries or object files.
+}
+
+{
+#Let's dive into the first error type: Syntax Errors 😱
+}
+
+{{
+#Syntax Errors
+
+{
+##Definition and Usage
+###Syntax errors happen when the code doesn't follow the correct syntax of the C++ language.
+###These errors are usually detected by the compiler at compile-time, which means the program won’t even run until the syntax is fixed.
+}
+
+{ 
+#Common Causes of Syntax Errors
+##1. Missing semicolons (;) at the end of a statement.
+^^^
+int x = 10 // Error: Missing semicolon
+^^^
+##2. Unmatched parentheses, braces, or brackets.
+^^^
+if (x > 5 { // Error: Unmatched parentheses
+std::cout << "x is greater than 5";
+}
+^^^
+}
+
+{ 
+#Example of a Syntax Error in Code:
+^^^
+int main() {
+int x = 10
+std::cout << "Hello World";
+return 0;
+}
+^^^
+###In this example, the missing semicolon after int x = 10 will cause a syntax error.
+}
+
+{ 
+#Fixing the Syntax Error
+##Add a semicolon at the end of the statement.
+^^^
+int main() {
+int x = 10;
+std::cout << "Hello World";
+return 0;
+}
+^^^
+###After adding the semicolon, the program will compile and run correctly.
+}
+
+{
+#Runtime Errors 🔥
+}
+
+{{
+#Runtime Errors
+
+{
+##Definition and Usage
+###Runtime errors happen while the program is running. These errors can cause the program to crash or behave unexpectedly.
+###They are not detected by the compiler and usually occur due to invalid input, out-of-bound access, or division by zero.
+}
+
+{ 
+#Common Causes of Runtime Errors
+##1. Division by zero.
+^^^
+int a = 5, b = 0;
+int result = a / b; // Error: Division by zero
+^^^
+##2. Accessing out-of-bounds elements in an array.
+^^^
+int arr[3] = {1, 2, 3};
+std::cout << arr[5]; // Error: Out-of-bounds access
+^^^
+}
+
+{
+#Example of a Runtime Error:
+^^^
+int main() {
+int a = 10;
+int b = 0;
+int result = a / b; // Error: Division by zero
+std::cout << result;
+return 0;
+}
+^^^
+###This code causes a runtime error due to division by zero.
+}
+
+{
+#Fixing the Runtime Error
+##Check if the divisor is zero before performing the division.
+^^^
+int main() {
+int a = 10;
+int b = 2;
+if (b != 0) {
+int result = a / b;
+std::cout << result;
+} else {
+std::cout << "Division by zero error";
+}
+return 0;
+}
+^^^
+###After adding the condition to check for zero, the program will not crash.
+}
+
+{
+#Logical Errors 🔍
+}
+
+{{
+#Logical Errors
+
+{
+##Definition and Usage
+###Logical errors occur when the program runs without crashing, but the output is incorrect.
+###These errors happen due to incorrect algorithms, incorrect use of conditions, or improper calculations.
+}
+
+{
+#Common Causes of Logical Errors
+##1. Using wrong mathematical operators.
+^^^
+int a = 5, b = 3;
+int result = a - b * 2; // Error: Incorrect order of operations
+^^^
+}
+
+{
+#Example of a Logical Error:
+^^^
+int main() {
+int a = 5, b = 3;
+int result = a - b * 2;
+std::cout << result; // Incorrect output
+return 0;
+}
+^^^
+###In this code, the result will be 1 instead of the expected -1 due to operator precedence.
+}
+
+{
+#Fixing the Logical Error
+##Reorder the operations to achieve the desired result.
+^^^
+int main() {
+int a = 5, b = 3;
+int result = (a - b) * 2;
+std::cout << result; // Correct output
+return 0;
+}
+^^^
+###By adding parentheses, the program will now output -1 as expected.
+}
+
+{
+#Linker Errors 🚧
+}
+
+{{
+#Linker Errors
+
+{
+##Definition and Usage
+###Linker errors occur when the linker fails to connect object files and libraries during the build process.
+###This typically happens when a function or variable is declared but not defined.
+}
+
+{
+#Common Causes of Linker Errors
+##1. Missing function definitions.
+^^^
+// Function declaration
+void myFunction();
+int main() {
+myFunction(); // Error: Function definition missing
+return 0;
+}
+^^^
+}
+
+{
+#Example of a Linker Error:
+^^^
+int main() {
+myFunction(); // Error: Function definition missing
+return 0;
+}
+^^^
+###This code will cause a linker error because myFunction() is declared but not defined.
+}
+
+{
+#Fixing the Linker Error
+##Define the function before using it in the program.
+^^^
+void myFunction() {
+std::cout << "Function is defined!" << std::endl;
+}
+int main() {
+myFunction(); // No error
+return 0;
+}
+^^^
+###After defining the function, the program will compile and run without errors.
+}

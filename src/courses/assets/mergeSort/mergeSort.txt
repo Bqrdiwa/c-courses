@@ -1,0 +1,129 @@
+*Source code in src/courses/mergeSort.cpp
+In this lesson, we will explore the Merge Sort algorithm, an efficient divide-and-conquer sorting technique.
+
+{
+#Merge Sort Algorithm:
+##1. What is Merge Sort?
+##2. How Merge Sort Works
+##3. Example of Merge Sort
+##4. Time Complexity
+##5. Advantages and Disadvantages
+}
+{
+#Let's dive into Merge Sort! 🔍
+}
+{{
+#What is Merge Sort?
+{
+##Definition and Usage
+###Merge Sort is a divide-and-conquer sorting algorithm. It divides the array into smaller subarrays, sorts them recursively, and then merges the sorted subarrays to produce the final sorted array.
+###It is efficient and has a time complexity of O(n log n), making it ideal for large datasets.
+}
+{
+#Example of Merge Sort:
+^^^
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void merge(vector<int>& arr, int left, int mid, int right) {
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
+    vector<int> leftArr(n1), rightArr(n2);
+
+    for (int i = 0; i < n1; i++) leftArr[i] = arr[left + i];
+    for (int i = 0; i < n2; i++) rightArr[i] = arr[mid + 1 + i];
+
+    int i = 0, j = 0, k = left;
+    while (i < n1 && j < n2) {
+        if (leftArr[i] <= rightArr[j]) {
+            arr[k++] = leftArr[i++];
+        } else {
+            arr[k++] = rightArr[j++];
+        }
+    }
+
+    while (i < n1) arr[k++] = leftArr[i++];
+    while (j < n2) arr[k++] = rightArr[j++];
+}
+
+void mergeSort(vector<int>& arr, int left, int right) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+        mergeSort(arr, left, mid);
+        mergeSort(arr, mid + 1, right);
+        merge(arr, left, mid, right);
+    }
+}
+
+int main() {
+    vector<int> arr = {38, 27, 43, 3, 9, 82, 10};
+    mergeSort(arr, 0, arr.size() - 1);
+    for (int num : arr) {
+        cout << num << " ";
+    }
+    return 0;
+}
+^^^
+###In this example, the Merge Sort algorithm recursively divides the array `{38, 27, 43, 3, 9, 82, 10}` into smaller subarrays and then merges them back together in sorted order.
+}
+}
+{
+#Now, let's break down how Merge Sort works! 🧩
+}
+{{
+#How Merge Sort Works
+{
+##Step-by-Step Process:
+###1. **Divide**: The array is divided into two halves.
+###2. **Recursively Sort**: Each half is sorted recursively by dividing it further until each subarray contains a single element.
+###3. **Merge**: The sorted subarrays are merged back together in a way that results in a fully sorted array.
+}
+{
+#Visualizing Merge Sort:
+^^^
+[38, 27, 43, 3, 9, 82, 10]  --> Divide into two halves: [38, 27, 43] and [3, 9, 82, 10]
+[38, 27, 43] --> Divide further: [38] and [27, 43]
+[3, 9, 82, 10] --> Divide further: [3, 9] and [82, 10]
+[27, 43] --> Merge sorted subarrays: [27, 43]
+[3, 9] --> Merge sorted subarrays: [3, 9]
+[82, 10] --> Merge sorted subarrays: [10, 82]
+...
+[3, 9, 10, 27, 38, 43, 82] --> Fully merged and sorted array
+^^^
+###Here, we see how the array is divided, sorted, and merged back together to produce the final sorted array.
+}
+}
+{
+#Let's discuss the time complexity of Merge Sort ⏳
+}
+{{
+#Time Complexity
+{
+##Definition and Analysis
+###- **Best Case (O(n log n))**: Even if the array is already sorted, the algorithm still divides and merges the subarrays.
+###- **Average Case (O(n log n))**: The array is randomly ordered, and the algorithm still divides and merges in the same manner.
+###- **Worst Case (O(n log n))**: Even in the worst-case scenario (e.g., reverse sorted array), Merge Sort performs consistently.
+###- **Space Complexity (O(n))**: Merge Sort requires additional space for temporary subarrays during the merge process.
+}
+}
+{
+#Advantages and Disadvantages of Merge Sort ⚖️
+}
+{{
+#Advantages
+{
+##Why Use Merge Sort?
+###- **Efficient for Large Data**: Merge Sort is very efficient, with a time complexity of O(n log n), making it ideal for large datasets.
+###- **Stable**: Merge Sort preserves the relative order of elements with equal values.
+###- **Parallelizable**: It can be parallelized easily, making it suitable for multi-core processors.
+}
+}
+{
+#Disadvantages
+{
+##Limitations of Merge Sort:
+###- **Space Complexity**: It requires additional space for temporary subarrays, which can be problematic for large data when memory is limited.
+###- **Slower for Small Arrays**: Although efficient for large datasets, Merge Sort can be slower than simpler algorithms like Insertion Sort for smaller arrays due to overhead.
+}
+}

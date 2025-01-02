@@ -1,0 +1,136 @@
+*Source code in src/courses/dateTime.cpp
+This document covers working with the <chrono> library in C++.
+
+{
+#Working with Date and Time using <chrono> in C++
+}
+{{
+#chrono()
+{
+##Definition and Usage
+###The <chrono> library in C++ provides tools for working with time durations, clocks, and time points. It allows you to measure time intervals, obtain the current time, and perform high-resolution time operations. 
+}
+{
+#1. Measuring Time Intervals ⏱️
+}
+{{
+#measuring_intervals()
+{
+##Definition
+###To measure the time taken by a section of code, you can use the high_resolution_clock in <chrono>. The high_resolution_clock provides the smallest measurable time unit, making it ideal for performance testing.
+}
+{
+#Example: Measuring Code Execution Time
+^^^
+#include <iostream>
+#include <chrono>
+
+int main() {
+    auto start = std::chrono::high_resolution_clock::now();
+    // Simulate work
+    for (int i = 0; i < 1000000; ++i);
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration = end - start;
+    std::cout << "Time taken: " << duration.count() << " seconds\n";
+    return 0;
+}
+^^^
+###This example measures the time it takes to execute a loop. The high_resolution_clock::now() function gets the current time before and after the code block, and the difference is calculated in seconds.
+}
+{
+#2. Getting the Current Time 📅
+}
+{{
+#current_time()
+{
+##Definition
+###You can get the current time using system_clock, which is the most common clock for representing real-world time.
+}
+{
+#Example: Getting Current Time
+^^^
+#include <iostream>
+#include <chrono>
+
+int main() {
+    auto now = std::chrono::system_clock::now();
+    std::time_t current_time = std::chrono::system_clock::to_time_t(now);
+    std::cout << "Current time: " << std::ctime(&current_time);
+    return 0;
+}
+^^^
+###This example retrieves the current time using system_clock::now() and then converts it to a time_t object, which represents time as the number of seconds since the epoch. It is then printed in a human-readable format.
+}
+{
+#3. Time Duration 🕰️
+}
+{{
+#time_duration()
+{
+##Definition
+###std::chrono::duration represents a time interval. You can create a duration using various time units like seconds, milliseconds, microseconds, etc.
+}
+{
+#Example: Time Duration
+^^^
+#include <iostream>
+#include <chrono>
+
+int main() {
+    std::chrono::seconds sec(10); // 10 seconds
+    std::chrono::milliseconds ms(1000); // 1000 milliseconds (1 second)
+    std::cout << "Seconds: " << sec.count() << "\n";
+    std::cout << "Milliseconds: " << ms.count() << "\n";
+    return 0;
+}
+^^^
+###In this example, std::chrono::seconds and std::chrono::milliseconds are used to represent durations. The .count() method returns the numeric value of the duration.
+}
+{
+#4. Converting Between Time Units 🔄
+}
+{{
+#converting_time_units()
+{
+##Definition
+###You can convert between different units of time using std::chrono::duration_cast. For example, you can convert a duration from seconds to milliseconds.
+}
+{
+#Example: Converting Time Units
+^^^
+#include <iostream>
+#include <chrono>
+
+int main() {
+    std::chrono::seconds sec(10); // 10 seconds
+    std::chrono::milliseconds ms = std::chrono::duration_caststd::chrono::milliseconds(sec);
+    std::cout << "10 seconds = " << ms.count() << " milliseconds\n";
+    return 0;
+}
+^^^
+###Here, std::chrono::duration_cast is used to convert 10 seconds into milliseconds.
+}
+{
+#5. Adding and Subtracting Durations ➕➖
+}
+{{
+#adding_subtracting_durations()
+{
+##Definition
+###You can add or subtract durations using operators like + and -. This is useful when you want to compute future or past times.
+}
+{
+#Example: Adding and Subtracting Time
+^^^
+#include <iostream>
+#include <chrono>
+
+int main() {
+    std::chrono::seconds sec(5); // 5 seconds
+    auto future_time = std::chrono::steady_clock::now() + sec;
+    std::cout << "Future time: " << future_time.time_since_epoch().count() << "\n";
+    return 0;
+}
+^^^
+###This example adds 5 seconds to the current time using + with a duration.
+}

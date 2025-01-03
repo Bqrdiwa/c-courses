@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bardia/Desktop/Paradox
+CMAKE_SOURCE_DIR = /home/bqrdiwa/Desktop/c-courses
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bardia/Desktop/Paradox/build
+CMAKE_BINARY_DIR = /home/bqrdiwa/Desktop/c-courses/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Paradox.dir/depend.make
@@ -70,142 +70,302 @@ include CMakeFiles/Paradox.dir/progress.make
 include CMakeFiles/Paradox.dir/flags.make
 
 CMakeFiles/Paradox.dir/src/main.cpp.o: CMakeFiles/Paradox.dir/flags.make
-CMakeFiles/Paradox.dir/src/main.cpp.o: /home/bardia/Desktop/Paradox/src/main.cpp
+CMakeFiles/Paradox.dir/src/main.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/main.cpp
 CMakeFiles/Paradox.dir/src/main.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bardia/Desktop/Paradox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Paradox.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/main.cpp.o -MF CMakeFiles/Paradox.dir/src/main.cpp.o.d -o CMakeFiles/Paradox.dir/src/main.cpp.o -c /home/bardia/Desktop/Paradox/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Paradox.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/main.cpp.o -MF CMakeFiles/Paradox.dir/src/main.cpp.o.d -o CMakeFiles/Paradox.dir/src/main.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/main.cpp
 
 CMakeFiles/Paradox.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bardia/Desktop/Paradox/src/main.cpp > CMakeFiles/Paradox.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/main.cpp > CMakeFiles/Paradox.dir/src/main.cpp.i
 
 CMakeFiles/Paradox.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bardia/Desktop/Paradox/src/main.cpp -o CMakeFiles/Paradox.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/main.cpp -o CMakeFiles/Paradox.dir/src/main.cpp.s
 
 CMakeFiles/Paradox.dir/src/utils.cpp.o: CMakeFiles/Paradox.dir/flags.make
-CMakeFiles/Paradox.dir/src/utils.cpp.o: /home/bardia/Desktop/Paradox/src/utils.cpp
+CMakeFiles/Paradox.dir/src/utils.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/utils.cpp
 CMakeFiles/Paradox.dir/src/utils.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bardia/Desktop/Paradox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Paradox.dir/src/utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/utils.cpp.o -MF CMakeFiles/Paradox.dir/src/utils.cpp.o.d -o CMakeFiles/Paradox.dir/src/utils.cpp.o -c /home/bardia/Desktop/Paradox/src/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Paradox.dir/src/utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/utils.cpp.o -MF CMakeFiles/Paradox.dir/src/utils.cpp.o.d -o CMakeFiles/Paradox.dir/src/utils.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/utils.cpp
 
 CMakeFiles/Paradox.dir/src/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bardia/Desktop/Paradox/src/utils.cpp > CMakeFiles/Paradox.dir/src/utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/utils.cpp > CMakeFiles/Paradox.dir/src/utils.cpp.i
 
 CMakeFiles/Paradox.dir/src/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bardia/Desktop/Paradox/src/utils.cpp -o CMakeFiles/Paradox.dir/src/utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/utils.cpp -o CMakeFiles/Paradox.dir/src/utils.cpp.s
+
+CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.o: CMakeFiles/Paradox.dir/flags.make
+CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/algoritm.cpp
+CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/algoritm.cpp
+
+CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/algoritm.cpp > CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.i
+
+CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/algoritm.cpp -o CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.s
 
 CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o: CMakeFiles/Paradox.dir/flags.make
-CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o: /home/bardia/Desktop/Paradox/src/courses/dateTime.cpp
+CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/dateTime.cpp
 CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bardia/Desktop/Paradox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o -c /home/bardia/Desktop/Paradox/src/courses/dateTime.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/dateTime.cpp
 
 CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bardia/Desktop/Paradox/src/courses/dateTime.cpp > CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/dateTime.cpp > CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.i
 
 CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bardia/Desktop/Paradox/src/courses/dateTime.cpp -o CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/dateTime.cpp -o CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.s
+
+CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.o: CMakeFiles/Paradox.dir/flags.make
+CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/enumeration.cpp
+CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/enumeration.cpp
+
+CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/enumeration.cpp > CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.i
+
+CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/enumeration.cpp -o CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.s
 
 CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o: CMakeFiles/Paradox.dir/flags.make
-CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o: /home/bardia/Desktop/Paradox/src/courses/errorHandeling.cpp
+CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/errorHandeling.cpp
 CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bardia/Desktop/Paradox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o -c /home/bardia/Desktop/Paradox/src/courses/errorHandeling.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/errorHandeling.cpp
 
 CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bardia/Desktop/Paradox/src/courses/errorHandeling.cpp > CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/errorHandeling.cpp > CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.i
 
 CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bardia/Desktop/Paradox/src/courses/errorHandeling.cpp -o CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/errorHandeling.cpp -o CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.s
 
 CMakeFiles/Paradox.dir/src/courses/errors.cpp.o: CMakeFiles/Paradox.dir/flags.make
-CMakeFiles/Paradox.dir/src/courses/errors.cpp.o: /home/bardia/Desktop/Paradox/src/courses/errors.cpp
+CMakeFiles/Paradox.dir/src/courses/errors.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/errors.cpp
 CMakeFiles/Paradox.dir/src/courses/errors.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bardia/Desktop/Paradox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Paradox.dir/src/courses/errors.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/errors.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/errors.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/errors.cpp.o -c /home/bardia/Desktop/Paradox/src/courses/errors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Paradox.dir/src/courses/errors.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/errors.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/errors.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/errors.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/errors.cpp
 
 CMakeFiles/Paradox.dir/src/courses/errors.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/errors.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bardia/Desktop/Paradox/src/courses/errors.cpp > CMakeFiles/Paradox.dir/src/courses/errors.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/errors.cpp > CMakeFiles/Paradox.dir/src/courses/errors.cpp.i
 
 CMakeFiles/Paradox.dir/src/courses/errors.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/errors.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bardia/Desktop/Paradox/src/courses/errors.cpp -o CMakeFiles/Paradox.dir/src/courses/errors.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/errors.cpp -o CMakeFiles/Paradox.dir/src/courses/errors.cpp.s
 
 CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o: CMakeFiles/Paradox.dir/flags.make
-CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o: /home/bardia/Desktop/Paradox/src/courses/fileTypes.cpp
+CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/fileTypes.cpp
 CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bardia/Desktop/Paradox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o -c /home/bardia/Desktop/Paradox/src/courses/fileTypes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/fileTypes.cpp
 
 CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bardia/Desktop/Paradox/src/courses/fileTypes.cpp > CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/fileTypes.cpp > CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.i
 
 CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bardia/Desktop/Paradox/src/courses/fileTypes.cpp -o CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/fileTypes.cpp -o CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.s
+
+CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.o: CMakeFiles/Paradox.dir/flags.make
+CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/inlineC.cpp
+CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/inlineC.cpp
+
+CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/inlineC.cpp > CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.i
+
+CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/inlineC.cpp -o CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.s
+
+CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.o: CMakeFiles/Paradox.dir/flags.make
+CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/insertationSort.cpp
+CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/insertationSort.cpp
+
+CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/insertationSort.cpp > CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.i
+
+CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/insertationSort.cpp -o CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.s
+
+CMakeFiles/Paradox.dir/src/courses/macro.cpp.o: CMakeFiles/Paradox.dir/flags.make
+CMakeFiles/Paradox.dir/src/courses/macro.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/macro.cpp
+CMakeFiles/Paradox.dir/src/courses/macro.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Paradox.dir/src/courses/macro.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/macro.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/macro.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/macro.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/macro.cpp
+
+CMakeFiles/Paradox.dir/src/courses/macro.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/macro.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/macro.cpp > CMakeFiles/Paradox.dir/src/courses/macro.cpp.i
+
+CMakeFiles/Paradox.dir/src/courses/macro.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/macro.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/macro.cpp -o CMakeFiles/Paradox.dir/src/courses/macro.cpp.s
+
+CMakeFiles/Paradox.dir/src/courses/math.cpp.o: CMakeFiles/Paradox.dir/flags.make
+CMakeFiles/Paradox.dir/src/courses/math.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/math.cpp
+CMakeFiles/Paradox.dir/src/courses/math.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Paradox.dir/src/courses/math.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/math.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/math.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/math.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/math.cpp
+
+CMakeFiles/Paradox.dir/src/courses/math.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/math.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/math.cpp > CMakeFiles/Paradox.dir/src/courses/math.cpp.i
+
+CMakeFiles/Paradox.dir/src/courses/math.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/math.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/math.cpp -o CMakeFiles/Paradox.dir/src/courses/math.cpp.s
+
+CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.o: CMakeFiles/Paradox.dir/flags.make
+CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/mergeSort.cpp
+CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/mergeSort.cpp
+
+CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/mergeSort.cpp > CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.i
+
+CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/mergeSort.cpp -o CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.s
+
+CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.o: CMakeFiles/Paradox.dir/flags.make
+CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/searchAlgoritms.cpp
+CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/searchAlgoritms.cpp
+
+CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/searchAlgoritms.cpp > CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.i
+
+CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/searchAlgoritms.cpp -o CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.s
 
 CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o: CMakeFiles/Paradox.dir/flags.make
-CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o: /home/bardia/Desktop/Paradox/src/courses/stringFunctions.cpp
+CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/stringFunctions.cpp
 CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bardia/Desktop/Paradox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o -c /home/bardia/Desktop/Paradox/src/courses/stringFunctions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/stringFunctions.cpp
 
 CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bardia/Desktop/Paradox/src/courses/stringFunctions.cpp > CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/stringFunctions.cpp > CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.i
 
 CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bardia/Desktop/Paradox/src/courses/stringFunctions.cpp -o CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/stringFunctions.cpp -o CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.s
 
 CMakeFiles/Paradox.dir/src/courses/templates.cpp.o: CMakeFiles/Paradox.dir/flags.make
-CMakeFiles/Paradox.dir/src/courses/templates.cpp.o: /home/bardia/Desktop/Paradox/src/courses/templates.cpp
+CMakeFiles/Paradox.dir/src/courses/templates.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/templates.cpp
 CMakeFiles/Paradox.dir/src/courses/templates.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bardia/Desktop/Paradox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Paradox.dir/src/courses/templates.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/templates.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/templates.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/templates.cpp.o -c /home/bardia/Desktop/Paradox/src/courses/templates.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Paradox.dir/src/courses/templates.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/templates.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/templates.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/templates.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/templates.cpp
 
 CMakeFiles/Paradox.dir/src/courses/templates.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/templates.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bardia/Desktop/Paradox/src/courses/templates.cpp > CMakeFiles/Paradox.dir/src/courses/templates.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/templates.cpp > CMakeFiles/Paradox.dir/src/courses/templates.cpp.i
 
 CMakeFiles/Paradox.dir/src/courses/templates.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/templates.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bardia/Desktop/Paradox/src/courses/templates.cpp -o CMakeFiles/Paradox.dir/src/courses/templates.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/templates.cpp -o CMakeFiles/Paradox.dir/src/courses/templates.cpp.s
+
+CMakeFiles/Paradox.dir/src/courses/union.cpp.o: CMakeFiles/Paradox.dir/flags.make
+CMakeFiles/Paradox.dir/src/courses/union.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/union.cpp
+CMakeFiles/Paradox.dir/src/courses/union.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Paradox.dir/src/courses/union.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/union.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/union.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/union.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/union.cpp
+
+CMakeFiles/Paradox.dir/src/courses/union.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/union.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/union.cpp > CMakeFiles/Paradox.dir/src/courses/union.cpp.i
+
+CMakeFiles/Paradox.dir/src/courses/union.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/union.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/union.cpp -o CMakeFiles/Paradox.dir/src/courses/union.cpp.s
+
+CMakeFiles/Paradox.dir/src/courses/vectors.cpp.o: CMakeFiles/Paradox.dir/flags.make
+CMakeFiles/Paradox.dir/src/courses/vectors.cpp.o: /home/bqrdiwa/Desktop/c-courses/src/courses/vectors.cpp
+CMakeFiles/Paradox.dir/src/courses/vectors.cpp.o: CMakeFiles/Paradox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Paradox.dir/src/courses/vectors.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paradox.dir/src/courses/vectors.cpp.o -MF CMakeFiles/Paradox.dir/src/courses/vectors.cpp.o.d -o CMakeFiles/Paradox.dir/src/courses/vectors.cpp.o -c /home/bqrdiwa/Desktop/c-courses/src/courses/vectors.cpp
+
+CMakeFiles/Paradox.dir/src/courses/vectors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paradox.dir/src/courses/vectors.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bqrdiwa/Desktop/c-courses/src/courses/vectors.cpp > CMakeFiles/Paradox.dir/src/courses/vectors.cpp.i
+
+CMakeFiles/Paradox.dir/src/courses/vectors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paradox.dir/src/courses/vectors.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bqrdiwa/Desktop/c-courses/src/courses/vectors.cpp -o CMakeFiles/Paradox.dir/src/courses/vectors.cpp.s
 
 # Object files for target Paradox
 Paradox_OBJECTS = \
 "CMakeFiles/Paradox.dir/src/main.cpp.o" \
 "CMakeFiles/Paradox.dir/src/utils.cpp.o" \
+"CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.o" \
 "CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o" \
+"CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.o" \
 "CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o" \
 "CMakeFiles/Paradox.dir/src/courses/errors.cpp.o" \
 "CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o" \
+"CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.o" \
+"CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.o" \
+"CMakeFiles/Paradox.dir/src/courses/macro.cpp.o" \
+"CMakeFiles/Paradox.dir/src/courses/math.cpp.o" \
+"CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.o" \
+"CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.o" \
 "CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o" \
-"CMakeFiles/Paradox.dir/src/courses/templates.cpp.o"
+"CMakeFiles/Paradox.dir/src/courses/templates.cpp.o" \
+"CMakeFiles/Paradox.dir/src/courses/union.cpp.o" \
+"CMakeFiles/Paradox.dir/src/courses/vectors.cpp.o"
 
 # External object files for target Paradox
 Paradox_EXTERNAL_OBJECTS =
 
 Paradox: CMakeFiles/Paradox.dir/src/main.cpp.o
 Paradox: CMakeFiles/Paradox.dir/src/utils.cpp.o
+Paradox: CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.o
 Paradox: CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.o
+Paradox: CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.o
 Paradox: CMakeFiles/Paradox.dir/src/courses/errorHandeling.cpp.o
 Paradox: CMakeFiles/Paradox.dir/src/courses/errors.cpp.o
 Paradox: CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.o
+Paradox: CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.o
+Paradox: CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.o
+Paradox: CMakeFiles/Paradox.dir/src/courses/macro.cpp.o
+Paradox: CMakeFiles/Paradox.dir/src/courses/math.cpp.o
+Paradox: CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.o
+Paradox: CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.o
 Paradox: CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o
 Paradox: CMakeFiles/Paradox.dir/src/courses/templates.cpp.o
+Paradox: CMakeFiles/Paradox.dir/src/courses/union.cpp.o
+Paradox: CMakeFiles/Paradox.dir/src/courses/vectors.cpp.o
 Paradox: CMakeFiles/Paradox.dir/build.make
 Paradox: CMakeFiles/Paradox.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bardia/Desktop/Paradox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Paradox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bqrdiwa/Desktop/c-courses/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable Paradox"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Paradox.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -217,6 +377,6 @@ CMakeFiles/Paradox.dir/clean:
 .PHONY : CMakeFiles/Paradox.dir/clean
 
 CMakeFiles/Paradox.dir/depend:
-	cd /home/bardia/Desktop/Paradox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bardia/Desktop/Paradox /home/bardia/Desktop/Paradox /home/bardia/Desktop/Paradox/build /home/bardia/Desktop/Paradox/build /home/bardia/Desktop/Paradox/build/CMakeFiles/Paradox.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/bqrdiwa/Desktop/c-courses/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bqrdiwa/Desktop/c-courses /home/bqrdiwa/Desktop/c-courses /home/bqrdiwa/Desktop/c-courses/build /home/bqrdiwa/Desktop/c-courses/build /home/bqrdiwa/Desktop/c-courses/build/CMakeFiles/Paradox.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Paradox.dir/depend
 

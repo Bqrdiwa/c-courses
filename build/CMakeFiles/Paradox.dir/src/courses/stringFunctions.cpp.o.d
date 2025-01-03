@@ -1,6 +1,7 @@
 CMakeFiles/Paradox.dir/src/courses/stringFunctions.cpp.o: \
- /home/bardia/Desktop/Paradox/src/courses/stringFunctions.cpp \
- /usr/include/stdc-predef.h /home/bardia/Desktop/Paradox/include/utils.h \
+ /home/bqrdiwa/Desktop/c-courses/src/courses/stringFunctions.cpp \
+ /usr/include/stdc-predef.h \
+ /home/bqrdiwa/Desktop/c-courses/include/utils.h \
  /usr/include/c++/13/iomanip /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

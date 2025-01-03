@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bardia/Desktop/Paradox
+CMAKE_SOURCE_DIR = /home/bqrdiwa/Desktop/c-courses
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bardia/Desktop/Paradox/build
+CMAKE_BINARY_DIR = /home/bqrdiwa/Desktop/c-courses/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bardia/Desktop/Paradox/build/CMakeFiles /home/bardia/Desktop/Paradox/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bqrdiwa/Desktop/c-courses/build/CMakeFiles /home/bqrdiwa/Desktop/c-courses/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bardia/Desktop/Paradox/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bqrdiwa/Desktop/c-courses/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,30 @@ Paradox/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/build
 .PHONY : Paradox/fast
 
+src/courses/algoritm.o: src/courses/algoritm.cpp.o
+.PHONY : src/courses/algoritm.o
+
+# target to build an object file
+src/courses/algoritm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.o
+.PHONY : src/courses/algoritm.cpp.o
+
+src/courses/algoritm.i: src/courses/algoritm.cpp.i
+.PHONY : src/courses/algoritm.i
+
+# target to preprocess a source file
+src/courses/algoritm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.i
+.PHONY : src/courses/algoritm.cpp.i
+
+src/courses/algoritm.s: src/courses/algoritm.cpp.s
+.PHONY : src/courses/algoritm.s
+
+# target to generate assembly for a file
+src/courses/algoritm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/algoritm.cpp.s
+.PHONY : src/courses/algoritm.cpp.s
+
 src/courses/dateTime.o: src/courses/dateTime.cpp.o
 .PHONY : src/courses/dateTime.o
 
@@ -152,6 +176,30 @@ src/courses/dateTime.s: src/courses/dateTime.cpp.s
 src/courses/dateTime.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/dateTime.cpp.s
 .PHONY : src/courses/dateTime.cpp.s
+
+src/courses/enumeration.o: src/courses/enumeration.cpp.o
+.PHONY : src/courses/enumeration.o
+
+# target to build an object file
+src/courses/enumeration.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.o
+.PHONY : src/courses/enumeration.cpp.o
+
+src/courses/enumeration.i: src/courses/enumeration.cpp.i
+.PHONY : src/courses/enumeration.i
+
+# target to preprocess a source file
+src/courses/enumeration.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.i
+.PHONY : src/courses/enumeration.cpp.i
+
+src/courses/enumeration.s: src/courses/enumeration.cpp.s
+.PHONY : src/courses/enumeration.s
+
+# target to generate assembly for a file
+src/courses/enumeration.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/enumeration.cpp.s
+.PHONY : src/courses/enumeration.cpp.s
 
 src/courses/errorHandeling.o: src/courses/errorHandeling.cpp.o
 .PHONY : src/courses/errorHandeling.o
@@ -225,6 +273,150 @@ src/courses/fileTypes.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/fileTypes.cpp.s
 .PHONY : src/courses/fileTypes.cpp.s
 
+src/courses/inlineC.o: src/courses/inlineC.cpp.o
+.PHONY : src/courses/inlineC.o
+
+# target to build an object file
+src/courses/inlineC.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.o
+.PHONY : src/courses/inlineC.cpp.o
+
+src/courses/inlineC.i: src/courses/inlineC.cpp.i
+.PHONY : src/courses/inlineC.i
+
+# target to preprocess a source file
+src/courses/inlineC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.i
+.PHONY : src/courses/inlineC.cpp.i
+
+src/courses/inlineC.s: src/courses/inlineC.cpp.s
+.PHONY : src/courses/inlineC.s
+
+# target to generate assembly for a file
+src/courses/inlineC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/inlineC.cpp.s
+.PHONY : src/courses/inlineC.cpp.s
+
+src/courses/insertationSort.o: src/courses/insertationSort.cpp.o
+.PHONY : src/courses/insertationSort.o
+
+# target to build an object file
+src/courses/insertationSort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.o
+.PHONY : src/courses/insertationSort.cpp.o
+
+src/courses/insertationSort.i: src/courses/insertationSort.cpp.i
+.PHONY : src/courses/insertationSort.i
+
+# target to preprocess a source file
+src/courses/insertationSort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.i
+.PHONY : src/courses/insertationSort.cpp.i
+
+src/courses/insertationSort.s: src/courses/insertationSort.cpp.s
+.PHONY : src/courses/insertationSort.s
+
+# target to generate assembly for a file
+src/courses/insertationSort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/insertationSort.cpp.s
+.PHONY : src/courses/insertationSort.cpp.s
+
+src/courses/macro.o: src/courses/macro.cpp.o
+.PHONY : src/courses/macro.o
+
+# target to build an object file
+src/courses/macro.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/macro.cpp.o
+.PHONY : src/courses/macro.cpp.o
+
+src/courses/macro.i: src/courses/macro.cpp.i
+.PHONY : src/courses/macro.i
+
+# target to preprocess a source file
+src/courses/macro.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/macro.cpp.i
+.PHONY : src/courses/macro.cpp.i
+
+src/courses/macro.s: src/courses/macro.cpp.s
+.PHONY : src/courses/macro.s
+
+# target to generate assembly for a file
+src/courses/macro.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/macro.cpp.s
+.PHONY : src/courses/macro.cpp.s
+
+src/courses/math.o: src/courses/math.cpp.o
+.PHONY : src/courses/math.o
+
+# target to build an object file
+src/courses/math.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/math.cpp.o
+.PHONY : src/courses/math.cpp.o
+
+src/courses/math.i: src/courses/math.cpp.i
+.PHONY : src/courses/math.i
+
+# target to preprocess a source file
+src/courses/math.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/math.cpp.i
+.PHONY : src/courses/math.cpp.i
+
+src/courses/math.s: src/courses/math.cpp.s
+.PHONY : src/courses/math.s
+
+# target to generate assembly for a file
+src/courses/math.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/math.cpp.s
+.PHONY : src/courses/math.cpp.s
+
+src/courses/mergeSort.o: src/courses/mergeSort.cpp.o
+.PHONY : src/courses/mergeSort.o
+
+# target to build an object file
+src/courses/mergeSort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.o
+.PHONY : src/courses/mergeSort.cpp.o
+
+src/courses/mergeSort.i: src/courses/mergeSort.cpp.i
+.PHONY : src/courses/mergeSort.i
+
+# target to preprocess a source file
+src/courses/mergeSort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.i
+.PHONY : src/courses/mergeSort.cpp.i
+
+src/courses/mergeSort.s: src/courses/mergeSort.cpp.s
+.PHONY : src/courses/mergeSort.s
+
+# target to generate assembly for a file
+src/courses/mergeSort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/mergeSort.cpp.s
+.PHONY : src/courses/mergeSort.cpp.s
+
+src/courses/searchAlgoritms.o: src/courses/searchAlgoritms.cpp.o
+.PHONY : src/courses/searchAlgoritms.o
+
+# target to build an object file
+src/courses/searchAlgoritms.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.o
+.PHONY : src/courses/searchAlgoritms.cpp.o
+
+src/courses/searchAlgoritms.i: src/courses/searchAlgoritms.cpp.i
+.PHONY : src/courses/searchAlgoritms.i
+
+# target to preprocess a source file
+src/courses/searchAlgoritms.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.i
+.PHONY : src/courses/searchAlgoritms.cpp.i
+
+src/courses/searchAlgoritms.s: src/courses/searchAlgoritms.cpp.s
+.PHONY : src/courses/searchAlgoritms.s
+
+# target to generate assembly for a file
+src/courses/searchAlgoritms.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/searchAlgoritms.cpp.s
+.PHONY : src/courses/searchAlgoritms.cpp.s
+
 src/courses/stringFunctions.o: src/courses/stringFunctions.cpp.o
 .PHONY : src/courses/stringFunctions.o
 
@@ -272,6 +464,54 @@ src/courses/templates.s: src/courses/templates.cpp.s
 src/courses/templates.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/templates.cpp.s
 .PHONY : src/courses/templates.cpp.s
+
+src/courses/union.o: src/courses/union.cpp.o
+.PHONY : src/courses/union.o
+
+# target to build an object file
+src/courses/union.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/union.cpp.o
+.PHONY : src/courses/union.cpp.o
+
+src/courses/union.i: src/courses/union.cpp.i
+.PHONY : src/courses/union.i
+
+# target to preprocess a source file
+src/courses/union.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/union.cpp.i
+.PHONY : src/courses/union.cpp.i
+
+src/courses/union.s: src/courses/union.cpp.s
+.PHONY : src/courses/union.s
+
+# target to generate assembly for a file
+src/courses/union.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/union.cpp.s
+.PHONY : src/courses/union.cpp.s
+
+src/courses/vectors.o: src/courses/vectors.cpp.o
+.PHONY : src/courses/vectors.o
+
+# target to build an object file
+src/courses/vectors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/vectors.cpp.o
+.PHONY : src/courses/vectors.cpp.o
+
+src/courses/vectors.i: src/courses/vectors.cpp.i
+.PHONY : src/courses/vectors.i
+
+# target to preprocess a source file
+src/courses/vectors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/vectors.cpp.i
+.PHONY : src/courses/vectors.cpp.i
+
+src/courses/vectors.s: src/courses/vectors.cpp.s
+.PHONY : src/courses/vectors.s
+
+# target to generate assembly for a file
+src/courses/vectors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paradox.dir/build.make CMakeFiles/Paradox.dir/src/courses/vectors.cpp.s
+.PHONY : src/courses/vectors.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -330,9 +570,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Paradox"
+	@echo "... src/courses/algoritm.o"
+	@echo "... src/courses/algoritm.i"
+	@echo "... src/courses/algoritm.s"
 	@echo "... src/courses/dateTime.o"
 	@echo "... src/courses/dateTime.i"
 	@echo "... src/courses/dateTime.s"
+	@echo "... src/courses/enumeration.o"
+	@echo "... src/courses/enumeration.i"
+	@echo "... src/courses/enumeration.s"
 	@echo "... src/courses/errorHandeling.o"
 	@echo "... src/courses/errorHandeling.i"
 	@echo "... src/courses/errorHandeling.s"
@@ -342,12 +588,36 @@ help:
 	@echo "... src/courses/fileTypes.o"
 	@echo "... src/courses/fileTypes.i"
 	@echo "... src/courses/fileTypes.s"
+	@echo "... src/courses/inlineC.o"
+	@echo "... src/courses/inlineC.i"
+	@echo "... src/courses/inlineC.s"
+	@echo "... src/courses/insertationSort.o"
+	@echo "... src/courses/insertationSort.i"
+	@echo "... src/courses/insertationSort.s"
+	@echo "... src/courses/macro.o"
+	@echo "... src/courses/macro.i"
+	@echo "... src/courses/macro.s"
+	@echo "... src/courses/math.o"
+	@echo "... src/courses/math.i"
+	@echo "... src/courses/math.s"
+	@echo "... src/courses/mergeSort.o"
+	@echo "... src/courses/mergeSort.i"
+	@echo "... src/courses/mergeSort.s"
+	@echo "... src/courses/searchAlgoritms.o"
+	@echo "... src/courses/searchAlgoritms.i"
+	@echo "... src/courses/searchAlgoritms.s"
 	@echo "... src/courses/stringFunctions.o"
 	@echo "... src/courses/stringFunctions.i"
 	@echo "... src/courses/stringFunctions.s"
 	@echo "... src/courses/templates.o"
 	@echo "... src/courses/templates.i"
 	@echo "... src/courses/templates.s"
+	@echo "... src/courses/union.o"
+	@echo "... src/courses/union.i"
+	@echo "... src/courses/union.s"
+	@echo "... src/courses/vectors.o"
+	@echo "... src/courses/vectors.i"
+	@echo "... src/courses/vectors.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -1,5 +1,5 @@
 CMakeFiles/Paradox.dir/src/courses/errors.cpp.o: \
- /home/bardia/Desktop/Paradox/src/courses/errors.cpp \
+ /home/bqrdiwa/Desktop/c-courses/src/courses/errors.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -150,8 +150,8 @@ CMakeFiles/Paradox.dir/src/courses/errors.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/bardia/Desktop/Paradox/include/utils.h /usr/include/c++/13/iomanip \
- /usr/include/c++/13/locale \
+ /home/bqrdiwa/Desktop/c-courses/include/utils.h \
+ /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \

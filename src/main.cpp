@@ -1,25 +1,18 @@
 #include "courses.h"
 
-template <typename T, typename X>
-T add(T a,X b){
-    return (a * b);
-    }
 int main()
 {
     log("Welcome to the C++ course!");
     log("Type 'help' to see the list of commands.");
     std::string command;
-    void (*functions[])() = {fileTypes, errorHandeling, errors, stringFunctions, dateTime, templates};
-    int functionCount = 6;
+    void (*functions[])() = {fileTypes, errorHandeling, errors, stringFunctions, dateTime, templates, algoritm, enumeration, inlineC, insertionSort
+    ,math, mergeSort, searchAlgoritms, unionC, vectors};
+    int functionCount = 15;
     int flag;
     int courseFlag = 0;
 
-        
+        void macro();
 
-
-    int x = add(3, 1.5);
-    std::cout << x; // output will be 4!
-    return 0;
 
     while (true)
     {

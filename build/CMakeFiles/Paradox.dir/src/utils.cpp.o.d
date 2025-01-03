@@ -1,5 +1,5 @@
 CMakeFiles/Paradox.dir/src/utils.cpp.o: \
- /home/bardia/Desktop/Paradox/src/utils.cpp /usr/include/stdc-predef.h \
+ /home/bqrdiwa/Desktop/c-courses/src/utils.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/13/iomanip /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

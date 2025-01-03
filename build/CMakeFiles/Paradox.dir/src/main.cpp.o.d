@@ -1,8 +1,8 @@
 CMakeFiles/Paradox.dir/src/main.cpp.o: \
- /home/bardia/Desktop/Paradox/src/main.cpp /usr/include/stdc-predef.h \
- /home/bardia/Desktop/Paradox/include/courses.h \
- /home/bardia/Desktop/Paradox/include/utils.h /usr/include/c++/13/iomanip \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /home/bqrdiwa/Desktop/c-courses/src/main.cpp /usr/include/stdc-predef.h \
+ /home/bqrdiwa/Desktop/c-courses/include/courses.h \
+ /home/bqrdiwa/Desktop/c-courses/include/utils.h \
+ /usr/include/c++/13/iomanip /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

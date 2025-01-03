@@ -40,6 +40,17 @@ void courses()
     log("4- StringFunctions");
     log("5- DateTime");
     log("6- Templates");
+    log("7- Algoritms");
+    log("8- Enumeration");
+    log("9- Inline");
+    log("10- InsertionSort");
+    log("11- Math");
+    log("12- MergeSort");
+    log("13- SearchAlgoritms");
+    log("14- Union");
+    log("15- Vectors");
+
+    
     
 }
 int countSymbolInLine(std::string &line, char symbol)
